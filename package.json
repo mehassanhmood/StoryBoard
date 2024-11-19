@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mehassanhmood.github.io/StoryBoard",
+  "homepage": "https://mehassanhmood.github.io/StoryBoard-4",
 
   "scripts": {
     "dev": "vite",
