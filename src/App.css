@@ -1,15 +1,17 @@
 :root {
  background-color: black;
+ scroll-behavior: smooth;
 }
 .app {
-    height: 100%;
-    width: 100%;
+    
     background-color: black;
     color: azure;
 }
 
 .sub-boxes {
     border-radius: 10px;
+    display: flex;
+    background-color: darkcyan;    
 }
 .progress-bar {
     position: fixed;
@@ -19,4 +21,7 @@
     height: 10px;
     background: var(--red);
     transform-origin: 0%;
+  }
+  ::-webkit-scrollbar {
+    scrollbar-width: none;
   }

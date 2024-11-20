@@ -2,8 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex border rounded-3xl border-teal-600 m-4 p-4'>
-      Footer Section
+    <div className='flex justify-center items-center bg-gradient-to-r from-cyan-500 to-purple-500  p-4'>
+      <p className='text-black font-bold'>
+        Footer Section
+      </p>
     </div>
   )
 }
