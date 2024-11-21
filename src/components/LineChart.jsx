@@ -16,7 +16,7 @@ const LineChart = () => {
 
   // Fetch data on component mount
   useEffect(() => {
-    fetch("/tsx_data.json")
+    fetch("public/tsx_data.json")
       .then((response) => response.json())
       .then((tsx) => setData(tsx))
       .catch((error) => console.error("Error fetching data:", error));
