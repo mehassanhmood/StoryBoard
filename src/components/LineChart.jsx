@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import tsx from "./tsx_data.jsx"
 
 const LineChart = () => {
   const containerRef = useRef(null);
@@ -16,10 +17,11 @@ const LineChart = () => {
 
   // Fetch data on component mount
   useEffect(() => {
-    fetch("public/tsx_data.json")
-      .then((response) => response.json())
-      .then((tsx) => setData(tsx))
-      .catch((error) => console.error("Error fetching data:", error));
+    // fetch("public/tsx_data.json")
+    //   .then((response) => response.json())
+    //   .then((tsx) => setData(tsx))
+    //   .catch((error) => console.error("Error fetching data:", error));
+    setData(tsx)
   }, []);
 
   // Extract stockMovement values from the data
