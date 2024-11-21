@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import YearsAnimation from './components/YearsAnimation'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import LineChart from './components/LineChart'
 
 function App() {
   const secondRef = useRef(null);
@@ -23,6 +24,7 @@ function App() {
     <div className='app flex flex-col'>
       <Hero />
       <YearsAnimation reference={secondRef}/>
+      <LineChart/>
       <CTA />
       <Footer />
     </div>
