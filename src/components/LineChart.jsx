@@ -78,28 +78,28 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: year_2000 }} // Opacity controlled by scroll progress
-          className="absolute top-[40%] left-[3%] translate-x-[-50%] translate-y-[-50%] text-white text-xl font-bold"
+          className="absolute top-[55%] md:top-[40%] left-[10%] md:left-[3%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
           Year 2000
         </motion.div>
 
         <motion.div
           style={{ opacity: dot_com }} // Opacity controlled by scroll progress
-          className="absolute top-[65%] left-[10%] translate-x-[-50%] translate-y-[-50%] text-white text-xl font-bold"
+          className="absolute top-[65%] left-[10%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
           The dot com bubble
         </motion.div>
 
         <motion.div
           style={{ opacity: housing_crisis }} // Opacity controlled by scroll progress
-          className="absolute top-[60%] left-[40%] translate-x-[-50%] translate-y-[-50%] text-white text-xl font-bold"
+          className="absolute top-[60%] left-[40%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
           The Housing Crisis
         </motion.div>
 
         <motion.div
           style={{ opacity: covid_strikes }} // Opacity controlled by scroll progress
-          className="absolute top-[42%] left-[85%] translate-x-[-50%] translate-y-[-50%] text-white text-xl font-bold"
+          className="absolute top-[60%] md:top-[42%] left-[85%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
           Covid Strikes
         </motion.div>
