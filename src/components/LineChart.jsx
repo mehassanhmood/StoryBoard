@@ -78,7 +78,7 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: year_2000 }} // Opacity controlled by scroll progress
-          className="absolute top-[55%] md:top-[40%] left-[10%] md:left-[3%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
+          className="absolute top-[55%] md:top-[40%] ml-16 md:left[4%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
           Year 2000
         </motion.div>

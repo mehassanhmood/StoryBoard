@@ -24,7 +24,7 @@ const Hero = () => {
     <div className='flex flex-col h-[100vh] w-[100vw] overflow-hidden'>
 
       <div className='flex flex-col leading-8 jutify-center items-center relative p-6 m-6'>
-        <h1 className='text-6xl text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500'>The Ripple Effect: How Economic Trends Shape Canadian Lives</h1>
+        <h1 className='text-2xl md:text-6xl text-center tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500'>The Ripple Effect: How Economic Trends Shape Canadian Lives</h1>
         <h4 className='mt-2 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500' >Connecting the dots between wages, prices, and investments since 1999</h4>
       </div>
 
