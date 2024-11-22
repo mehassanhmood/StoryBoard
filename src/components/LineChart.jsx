@@ -85,9 +85,9 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: dot_com }} // Opacity controlled by scroll progress
-          className="absolute top-[65%] left-[10%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
+          className="absolute top-[65%] left-[15%]  md:left-[10%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-xl font-bold"
         >
-          The dot com bubble
+          Dot com bubble
         </motion.div>
 
         <motion.div
