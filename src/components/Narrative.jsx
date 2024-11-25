@@ -5,10 +5,11 @@ const Narrative = ({text}) => {
 
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
-    container: containerRef
+    container: containerRef,
+    offset: ["start end", "end start"]
   });
 
-  const scaleX = useSpring(scrollYProgress, {
+  const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
@@ -18,8 +19,8 @@ const Narrative = ({text}) => {
   
     <div 
     // ref={containerRef}
-    className='flex flex-col  w-[96] h-[39%] m-4 p-2'>
-      <motion.div className="h-[40px] absolute text-center bg-cyan-500 sticky top-1 border rounded-lg border-teal-600 z-20" style={{ scaleX }} />
+    className='flex  w-full h-full m-4 my-12 py-12'>
+      <motion.div className="w-[25px] h-full absolute bg-cyan-500 sticky left-0 mt-10  border rounded-lg border-teal-600 z-20" style={{ scaleY, transformOrigin:"top" }} />
       <p 
       ref={containerRef}
       className='z-10 p-6 m-6 overflow-y-scroll'>
