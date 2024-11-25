@@ -28,7 +28,7 @@ const Hero = () => {
         <h4 className='mt-2 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-500' >Connecting the dots between wages, prices, and investments since 1999</h4>
       </div>
 
-      <div className='flex flex-col md:flex-row h-full m-2 p-6 justify-center items-center relative gap-6'>
+      <div className='flex flex-col md:flex-row h-full m-2 p-6 justify-around items-center relative gap-6'>
         <motion.div className="w-[35%]">
           <p className="flex flex-wrap md:text-4xl text-pretty text-transparent bg-clip-text bg-gradient-to-r from-teal-100 to-cyan-300">
             {letters.map((letter, index) => (
@@ -55,7 +55,7 @@ const Hero = () => {
         transition={{duration:2, ease:"easeInOut"}}
         >
           <img src={placeholderImage} alt="Hero image of inflation vs investment" 
-          className='object-cover md:object-cover  border border-teal-600 rounded-3xl opacity-80'
+          className='object-fill md:object-fill  border justify-self-center border-teal-600 rounded-3xl opacity-80 h-[80%] w-[80%]]'
           />
         </motion.div>
       </div>
