@@ -23,7 +23,7 @@ const Narrative = ({text}) => {
       <motion.div className="w-[25px] h-full absolute bg-cyan-500 sticky left-0 mt-10  border rounded-lg border-teal-600 z-20" style={{ scaleY, transformOrigin:"top" }} />
       <p 
       ref={containerRef}
-      className='z-10 p-6 m-6 overflow-y-scroll'>
+      className='z-10 p-6 m-6 overflow-y-scroll text-xl'>
         {text}
       </p>
     </div>

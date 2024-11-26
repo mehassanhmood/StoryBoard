@@ -11,7 +11,7 @@ const LineChart = () => {
   
 
 
-  const scaleY = 400; // This controls the gyrations magnitude 
+  const scaleY = 375; // This controls the gyrations magnitude 
   const scaleX = 5; // Scale X-axis values
   const [data, setData] = useState([]); // State to hold fetched data
 
