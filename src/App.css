@@ -25,3 +25,8 @@
   ::-webkit-scrollbar {
     scrollbar-width: none;
   }
+
+  .story {
+    margin-bottom: 44px;
+    padding-bottom: 44px;
+  }

@@ -1,140 +1,68 @@
-export function LoremIpsum() {
+export function LoremIpsum({housingRef, inflationRef, bondRef}) {
     return (
       <>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-            rhoncus quam.
+        <div class="content-section">
+          {/* <h1 className="text-center text-3xl">Understanding the Effects of Inflation and Investment Choices</h1> */}
+
+          <h2 ref={inflationRef}
+          className="text-center text-2xl">The Effect of Inflation on the Dollar (2000–2024)</h2>
+          <br />
+          <p className="story">
+            Over the last two decades, inflation has significantly eroded the purchasing power of the dollar. In 2000, one dollar could buy much more than it can today, with inflation steadily increasing at an average annual rate of 2-3%. By 2024, the cumulative impact of inflation has reduced the real value of a dollar by nearly 40%, meaning that what cost $1 in 2000 might now cost approximately $1.40 or more. This silent erosion highlights the importance of understanding inflation and its impact on savings and investments.
           </p>
-          <p>
-            Fringilla quam urna. Cras turpis elit, euismod eget ligula quis,
-            imperdiet sagittis justo. In viverra fermentum ex ac vestibulum.
-            Aliquam eleifend nunc a luctus porta. Mauris laoreet augue ut felis
-            blandit, at iaculis odio ultrices. Nulla facilisi. Vestibulum cursus
-            ipsum tellus, eu tincidunt neque tincidunt a.
+          <br />
+          <br />
+          <br />
+
+          <h2 
+            
+            className="text-center text-2xl pt-12 mt-12">Growth of a Dollar If Invested in Housing</h2>
+          <br />
+          <p 
+          className="story"
+          ref={housingRef}>
+            Housing has proven to be one of the most resilient investments over the years. From 2000 to 2024, the real estate market experienced substantial growth, driven by demand, urbanization, and limited housing supply in many regions. A dollar invested in housing in 2000 would have grown significantly, benefiting from property appreciation and rental income. For example, in major cities, property values have doubled or tripled, turning even modest investments into substantial wealth. This underscores the potential of real estate as a long-term wealth-building asset.
           </p>
-          <h2>Sub-header</h2>
-          <p>
-            In eget sodales arcu, consectetur efficitur metus. Duis efficitur
-            tincidunt odio, sit amet laoreet massa fringilla eu.
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h2 
+            className="text-center text-2xl">Why People Are Afraid to Invest in an Index Fund</h2>
+          <br />
+          <p
+          ref={bondRef}
+          className="story"
+          >
+            Despite the historical stability and growth of index funds, many people remain hesitant to invest. Common fears include market volatility, lack of control over individual stock selections, and uncertainty about the timing of investments. Additionally, periods of economic downturn, such as the 2008 financial crisis or COVID-19 market corrections, have left psychological scars on potential investors. These fears, though understandable, often prevent individuals from taking advantage of the consistent returns offered by broad-market index funds over the long term.
           </p>
-          <p>
-            Pellentesque id lacus pulvinar elit pulvinar pretium ac non urna.
-            Mauris id mauris vel arcu commodo venenatis. Aliquam eu risus arcu.
-            Proin sit amet lacus mollis, semper massa ut, rutrum mi.
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h2 className="text-center text-2xl">The Lack of Financial Education</h2>
+          <br />
+          <p 
+          className="story"
+          >
+            One of the primary reasons for poor financial decision-making is the lack of financial education. Many people are not taught the basics of budgeting, saving, or investing in school or at home. This knowledge gap leads to missed opportunities, such as understanding how compound interest works or why long-term investing in diversified assets reduces risk. Without proper financial literacy, individuals often fall prey to poor financial habits, high-interest debt, and skepticism toward proven investment vehicles like index funds or real estate.
           </p>
-          <p>Sed sem nisi, luctus consequat ligula in, congue sodales nisl.</p>
-          <p>
-            Vestibulum bibendum at erat sit amet pulvinar. Pellentesque pharetra
-            leo vitae tristique rutrum. Donec ut volutpat ante, ut suscipit leo.
-          </p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-          <p>
-            Pellentesque id lacus pulvinar elit pulvinar pretium ac non urna.
-            Mauris id mauris vel arcu commodo venenatis. Aliquam eu risus arcu.
-            Proin sit amet lacus mollis, semper massa ut, rutrum mi.
-          </p>
-          <p>Sed sem nisi, luctus consequat ligula in, congue sodales nisl.</p>
-          <p>
-            Vestibulum bibendum at erat sit amet pulvinar. Pellentesque pharetra
-            leo vitae tristique rutrum. Donec ut volutpat ante, ut suscipit leo.
-          </p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-          <h2>Sub-header</h2>
-          <p>
-            Maecenas quis elementum nulla, in lacinia nisl. Ut rutrum fringilla
-            aliquet. Pellentesque auctor vehicula malesuada. Aliquam id feugiat
-            sem, sit amet tempor nulla. Quisque fermentum felis faucibus, vehicula
-            metus ac, interdum nibh. Curabitur vitae convallis ligula. Integer ac
-            enim vel felis pharetra laoreet. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Pellentesque hendrerit ac augue quis
-            pretium.
-          </p>
-          <p>
-            Morbi ut scelerisque nibh. Integer auctor, massa non dictum tristique,
-            elit metus efficitur elit, ac pretium sapien nisl nec ante. In et ex
-            ultricies, mollis mi in, euismod dolor.
-          </p>
-          <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
-        </article>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+
       </>
     );
   }
