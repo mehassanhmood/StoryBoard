@@ -11,7 +11,7 @@ const LineChart = () => {
   
 
 
-  const scaleY = 375; // This controls the gyrations magnitude 
+  const scaleY = 250; // This controls the gyrations magnitude 
   const scaleX = 5; // Scale X-axis values
   const [data, setData] = useState([]); // State to hold fetched data
 
@@ -40,7 +40,7 @@ const LineChart = () => {
 
     const points = price.map((value, index) => {
       const x = index * scaleX;
-      const y = 1100 - value * scaleY; // Flip and scale Y-axis
+      const y = 850 - value * scaleY; // Flip and scale Y-axis
       return `${x},${y}`;
     });
 

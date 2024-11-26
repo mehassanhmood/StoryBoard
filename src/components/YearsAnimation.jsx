@@ -13,7 +13,7 @@ const YearsAnimation = ({refernece}) => {
 
   return (
     
-    <div ref={refernece} className='flex flex-col justify-between md:flex-row gap-6 h-screen bg-gradient-to-r from-cyan-500/50 to-purple-500/50 '>
+    <div ref={refernece} className='flex flex-col h-[115vh] justify-between md:flex-row gap-6 h-screen bg-gradient-to-r from-cyan-500/50 to-purple-500/50 '>
       <div className='flex h-full w-[50%]'>
         <DynamicStory />
       </div>
