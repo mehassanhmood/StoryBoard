@@ -4,12 +4,13 @@ import Housing from '../assets/Housing';
 import CompoundedBond from '../assets/CompoundedBond';
 import SubLineChart from '../assets/SubLineChart';
 import BarChart from '../assets/BarChart';
+import stonks from "/stonks.jpg"
 import { motion } from 'framer-motion';
 
 
 
 
-const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonInView}) => {
+const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonInView , hedgingInView}) => {
 
     const [data, setData] = useState([]);
     const [ housingData, setHousingData] = useState([]);
@@ -50,6 +51,19 @@ const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonI
                  { comparisonInView && (
                  <BarChart/>
 
+                 )}
+                 {(
+                  hedgingInView && (
+                    <motion.div
+                    initial = {{opacity:0}}
+                    animate = {{opacity: 0.8}}
+                    transition={{duration:1.5}}
+                    >
+                      <img src={stonks} 
+                      className='md:h-[400px] border border-transparent rounded-3xl'
+                      alt="" />
+                    </motion.div>
+                  )
                  )}
 
             </motion.div>

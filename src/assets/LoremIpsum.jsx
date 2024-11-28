@@ -4,7 +4,7 @@ import housing_market from "/housing_market.png"
 import index_fund from "/index-fund.png"
 import financial_pic from "/financial_pic.png"
 
-export function LoremIpsum({housingRef, inflationRef, bondRef, comparitiveRef}) {
+export function LoremIpsum({housingRef, inflationRef, bondRef, comparitiveRef, hedgingRef}) {
     return (
       <>
         <div className="content-section">
@@ -35,7 +35,7 @@ export function LoremIpsum({housingRef, inflationRef, bondRef, comparitiveRef}) 
 
           </p>
           <h2 className="text-center text-2xl pt-12 mb-10 md:3xl font-semibold">Hedging Inflation with Equities: Long-Term Growth and Buy-and-Hold Strategy </h2>
-          <p className="story">
+          <p className="story" ref={hedgingRef}>
           Equities are one of the best asset classes for beating inflation over the long term. Unlike cash or bonds, whose value erodes due to inflation, equities tend to grow in value alongside economic expansion. Companies increase prices of goods and services over time, leading to higher revenues and profits, which are reflected in rising stock prices. A buy-and-hold strategy for retirement—investing consistently and letting compounding do its work—can outpace inflation. By holding equities for decades, investors allow fundamental economic growth and corporate earnings to outperform rising costs of living. For example, an investor in the S&P 500 over the last 50 years would have seen an average annualized return of around 8%, far surpassing the average inflation rate of 3%. This strategy, particularly when paired with ETFs, offers diversification, stability, and inflation-beating growth.
           </p>
 
