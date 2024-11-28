@@ -88,7 +88,7 @@ const CTA = () => {
           <div>
             <h2 className='font-bold' >Why It Matters:</h2>
             <p className='text-sm' >
-                Learn how compound interest can grow your wealth. <br />
+                Learn how compounding effect can grow your wealth. <br />
                 Understand the potential of real estate investments. <br />
                 Discover the stability of index funds for long-term growth. <br />
                 Start your journey today and make your money work for you! <br />
