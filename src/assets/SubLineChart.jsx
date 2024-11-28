@@ -11,10 +11,10 @@ const SubLineChart = ({ data, label, text }) => {
         datasets : [{
             label: label,
             data: data,
-            borderColor: 'rgba(75,192,192,1)', // Line color
-            backgroundColor: 'rgba(75,192,192,0.2)', // Area color
-            tension: 0.4, // For smooth curves in the line chart
-            fill: true, // Fill the area under the li
+            borderColor: 'rgba(75,192,192,1)', 
+            backgroundColor: 'rgba(75,192,192,0.2)', 
+            tension: 0.4, 
+            fill: true, 
 
         }]
     }

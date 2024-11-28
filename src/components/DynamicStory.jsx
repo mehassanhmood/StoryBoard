@@ -3,12 +3,13 @@ import Inflation from '../assets/Inflation'
 import Housing from '../assets/Housing';
 import CompoundedBond from '../assets/CompoundedBond';
 import SubLineChart from '../assets/SubLineChart';
+import BarChart from '../assets/BarChart';
 import { motion } from 'framer-motion';
 
 
 
 
-const DynamicStory = ({housingInView , inflationInView , bondInView}) => {
+const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonInView}) => {
 
     const [data, setData] = useState([]);
     const [ housingData, setHousingData] = useState([]);
@@ -46,6 +47,11 @@ const DynamicStory = ({housingInView , inflationInView , bondInView}) => {
                  <SubLineChart data={housingData} label={"A $ in Housing"} text={"Cumulative effect of Housing Appreciation"} />
 
                  )}
+                 { comparisonInView && (
+                 <BarChart/>
+
+                 )}
+
             </motion.div>
   )
 }
