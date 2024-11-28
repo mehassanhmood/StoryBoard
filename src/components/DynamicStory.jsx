@@ -5,13 +5,14 @@ import CompoundedBond from '../assets/CompoundedBond';
 import SubLineChart from '../assets/SubLineChart';
 import BarChart from '../assets/BarChart';
 import stonks from "/stonks.jpg"
+import gold from "/gold.png"
 import TsxPrice from "../assets/TsxPrice"
 import { motion } from 'framer-motion';
 
 
 
 
-const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonInView , fearInView}) => {
+const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonInView , fearInView, goldInView}) => {
 
     const [data, setData] = useState([]);
     const [ housingData, setHousingData] = useState([]);
@@ -35,6 +36,18 @@ const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonIn
             animate={{ opacity:1 }}
             transition={{duration:1}}
             className="sub-boxes justify-center items-center  p-2  w-full">
+
+                { goldInView && (
+                  <motion.div
+                  initial = {{opacity:0}}
+                  animate = {{opacity: 0.8}}
+                  transition={{duration:1.5}}
+                  >
+                    <img src={gold} 
+                    className='md:h-[400px] border border-transparent rounded-3xl'
+                    alt="" />
+                  </motion.div>
+                )}
 
                 { fearInView && (
                   <motion.div

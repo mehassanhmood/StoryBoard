@@ -5,10 +5,15 @@ import index_fund from "/index-fund.png"
 import financial_pic from "/financial_pic.png"
 import candleStick from "/candlestick-chart.png"
 
-export function LoremIpsum({housingRef, inflationRef, tsxRef, comparitiveRef, fearRef}) {
+
+export function LoremIpsum({housingRef, inflationRef, tsxRef, comparitiveRef, fearRef, goldRef}) {
     return (
       <>
         <div className="content-section">
+          <h2 className="text-center text-2xl md:3xl mb-[50px] font-semibold md:mt-[100px]">Why Gold Doesn't Deflate Like the Dollar?</h2>  
+            <p className="story mb-100px" ref = {goldRef}>
+            Gold's value isn't tied to inflation like fiat currencies because its supply is finite and can't be arbitrarily expanded. Unlike the dollar, gold's value isn't dependent on government monetary policies or debt. In 1971, President Nixon detached the dollar from the gold standard, transitioning to fiat currency, which allowed governments to print unlimited money. This flexibility in monetary policy has led to inflationary pressures and currency devaluation over time. While fiat currencies lose purchasing power—up to 40% since 2000—gold remains a reliable store of value, immune to inflation. However, it lacks the liquidity and backing that fiat currencies offer for day-to-day transactions.
+            </p>
           <img src={inflation_pic} className ="mb-10 md:ml-10 md pl-10 opacity-10" alt="" />   
           <h2 className="text-center text-2xl md:3xl mb-[50px] font-semibold md:mt-[100px]">The Effect of Inflation on the Dollar (2000–2024)</h2>  
             <p className="story mb-100px" ref={inflationRef}>
