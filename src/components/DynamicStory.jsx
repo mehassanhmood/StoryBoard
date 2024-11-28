@@ -62,12 +62,12 @@ const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonIn
                 )}
 
                 { inflationInView && (
-                 <SubLineChart data={inflationData} label={"Dollar Devaluation"} text={"Cumulative effect of Inflation"} />
+                 <SubLineChart data={inflationData} label={"Dollar Devaluation"} text={"Cumulative effect of Inflation"} timePeriod={"Year"}/>
                 )}
               
 
                  { housingInView && (
-                 <SubLineChart data={housingData} label={"A $ in Housing"} text={"Cumulative effect of Housing Appreciation"} />
+                 <SubLineChart data={housingData} label={"A $ in Housing"} text={"Cumulative effect of Housing Appreciation"} timePeriod={"Month"}/>
 
                  )}
                  { comparisonInView && (

@@ -5,9 +5,9 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 
-const SubLineChart = ({ data, label, text }) => {
+const SubLineChart = ({ data, label, text, timePeriod }) => {
     const chartData = {
-        labels: data.map((_, index) => `Month ${index + 1}`),
+        labels: data.map((_, index) => `${timePeriod} ${index + 1}`),
         datasets : [{
             label: label,
             data: data,

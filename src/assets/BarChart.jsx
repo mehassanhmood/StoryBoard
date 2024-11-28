@@ -15,9 +15,9 @@ import { color } from 'framer-motion';
 
   const ComparitiveAnalysis = [
     {
-      "10 Yr Treasury Return": 1306.45,
-      "20 Yr Investment in Housing": 6003.34448160535,
-      "TSX 20 Yr Returns": 2934.8409993986616,
+      "10 Yr Treasury Return": 306.45,
+      "20 Yr Investment in Housing": 5003.34448160535,
+      "TSX 20 Yr Returns": 1934.8409993986616,
     },
   ];
 
@@ -31,7 +31,7 @@ import { color } from 'framer-motion';
       labels: labels,
       datasets: [
         {
-          label: "Comparative Analysis (Returns in %)",
+          label: "Comparative Analysis (Returns in $)",
           data: dataValues,
           backgroundColor: ["#4CAF50", "#FFC107", "#2196F3"],
           borderColor: ["#388E3C", "#FFA000", "#1976D2"],
@@ -53,7 +53,7 @@ import { color } from 'framer-motion';
           },
           title: {
             display: true,
-            text: "Comparative Analysis of Returns",
+            text: "Comparative Analysis of Returns on 1000 $",
             color: "white", // White title text
           },
         },
@@ -80,7 +80,7 @@ import { color } from 'framer-motion';
             },
             title: {
               display: true,
-              text: "Returns (%)",
+              text: "Returns ($)",
               color: "white", // White title for Y-axis
             },
           },
