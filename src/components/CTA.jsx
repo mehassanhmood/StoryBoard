@@ -25,11 +25,16 @@ const CTA = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between h-[100vh] p-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
 
-      <div className='flex flex-col w-1/2 h-[full]'>
-        <h1 className="text-xl font-bold mb-4">
+      <div className='flex flex-col w-1/2 h-[full] justify-center items-center'>
+        <h1 className="text-xl font-bold mb-4 text-center">
           Inflation Calculator: See How Inflation Affects Your Money
         </h1>
-        <div className="flex flex-col gap-4 w-full md:w-[35%]">
+        <p className='m-2 p-2 text-center'>
+          Enter your details to discover how inflation impacts the value of your savings over time. <br />
+            Start Planning for a Secure Financial Future! <br />
+            Inflation doesn’t have to erode your hard-earned money. Take the first step by understanding its effects and exploring proven investment strategies.
+        </p>
+        <div className="flex flex-col gap-4 w-full md:w-[35%] justify-center">
           <input
             type="number"
             placeholder="Enter your amount (e.g., 1000)"
@@ -68,12 +73,27 @@ const CTA = () => {
       <div className='flex-col justify-center items-center top-[50%] text-center'> 
         <div className='flex flex-col justify-center items-center '>
         <h2 class="text-3xl font-bold mb-4 ">Take Control of Your Financial Future Today!</h2>
+        <p>Empower yourself with resources to beat inflation:
+        </p>
           <h2 className='text-center'>Investment Resources</h2>
-          <ul >
-            <li><a href="https://www.worldbank.org/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faGlobe} /> World Bank</a></li>
-            <li><a href="https://www.investopedia.com/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faUniversity} /> Investopedia</a></li>
-            <li><a href="https://finance.yahoo.com/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faChartLine} /> Yahoo Finance</a></li>
+          <ul className='py-6 my-6'>
+            <li><a href="https://www.worldbank.org/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faGlobe} /> World Bank – Global economic insights and tools
+            </a></li>
+            <li><a href="https://www.investopedia.com/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faUniversity} /> Investopedia – Your guide to investing basics
+            </a></li>
+            <li><a href="https://finance.yahoo.com/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faChartLine} /> Yahoo Finance – Stay updated on markets and trends
+
+            </a></li>
           </ul>
+          <div>
+            <h2>Why It Matters:</h2>
+            <p>
+                Learn how compound interest can grow your wealth. <br />
+                Understand the potential of real estate investments. <br />
+                Discover the stability of index funds for long-term growth. <br />
+                Start your journey today and make your money work for you! <br />
+            </p>
+          </div>
         </div>
       </div>
 
