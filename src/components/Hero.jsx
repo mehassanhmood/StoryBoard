@@ -1,5 +1,5 @@
 import React from 'react'
-import placeholderImage from "/dollar1.jpg"
+import placeholderImage from "/inflation.png"
 import { motion } from "framer-motion"
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className='flex flex-col md:flex-row h-full m-2 p-6 justify-around items-center relative gap-6'>
         <motion.div 
-          className='w-[35%] mr-2'
+          className='w-[45%] mr-2'
           initial={{opacity:0, x:-900}}
           animate={{opacity:1, x:0}}
           transition={{duration:1}}
@@ -32,7 +32,7 @@ const Hero = () => {
         transition={{duration:2, ease:"easeInOut"}}
         >
           <img src={placeholderImage} alt="Hero image of inflation vs investment" 
-          className='object-fill md:object-fill  border justify-self-center border-teal-600 rounded-3xl opacity-80 h-[80%] w-[80%]]'
+          className='object-fill md:object-fill   justify-self-center  opacity-30 h-[80%] w-[80%]]'
           />
         </motion.div>
       </div>
