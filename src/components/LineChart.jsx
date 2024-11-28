@@ -81,22 +81,22 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: year_2000 }} // Opacity controlled by scroll progress
-          className="absolute top-[69%] md:top-[69%] ml-10 md:left[4%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md"
+          className="absolute top-[75%] left-[1%] md:top-[69%] md:left[4%] ml-8 translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md"
         >
           <b>Year 2000</b>
         </motion.div>
 
         <motion.div
           style={{ opacity: dot_com }} // Opacity controlled by scroll progress
-          className="absolute top-[83%] left-[15%] md:top-[90%] md:left-[12%] translate-x-[-50%] translate-y-[-50%] text-center text-red-400 text-sm md:text-md w-[90px]"
+          className="absolute top-[92%] left-[15%] md:top-[90%] md:left-[12%] translate-x-[-50%] translate-y-[-50%] text-center text-red-400 text-sm md:text-md w-[90px]"
         >
           Portfolio Value 720$
         </motion.div>
         <motion.div
           style={{ opacity: dot_com }} // Opacity controlled by scroll progress
-          className="absolute top-[79%] left-[15%] md:top-[83%] md:left-[12%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md"
+          className="absolute top-[88%] left-[17%] md:top-[83%] md:left-[12%] translate-x-[-50%] translate-y-[-50%] text-white text-xs md:text-md"
         >
-          Dot com bubble (2000-2002)
+          Dot com bubble <br /> (2000-2002)
         </motion.div>
         <motion.div
           style={{ opacity: dot_com_crisis }} // Opacity controlled by scroll progress
@@ -109,25 +109,25 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: housing_crisis }} // Opacity controlled by scroll progress
-          className="absolute top-[77%] left-[50%]  md:top-[90%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md "
+          className="absolute top-[84%] left-[50%]  md:top-[90%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md "
         >
           The Housing Crisis (2008)
         </motion.div>
         <motion.div
           style={{ opacity: housing_crisis }} // Opacity controlled by scroll progress
-          className="absolute top-[80%] left-[53%] md:top-[93%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-white text-xs md:text-md text-center"
+          className="absolute top-[86%] left-[53%] md:top-[93%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-white text-xs md:text-md text-center"
         >
           Lowest Infaltion in 24 years 0.3%
         </motion.div>
         <motion.div
           style={{ opacity: pre_housing }} // Opacity controlled by scroll progress
-          className="absolute top-[65%] left-[35%] md:top-[55%] md:left-[35%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-sm md:text-md"
+          className="absolute top-[73%] left-[35%] md:top-[55%] md:left-[35%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-sm md:text-md"
         >
           Portfolio Value <br /> $1730
         </motion.div>
         <motion.div
           style={{ opacity: housing_crisis }} // Opacity controlled by scroll progress
-          className="absolute top-[82%] md:top-[95%] left-[48%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-red-400 text-sm md:text-md"
+          className="absolute top-[88%] md:top-[95%] left-[48%] md:left-[40%] translate-x-[-50%] translate-y-[-50%] text-red-400 text-sm md:text-md"
         >
           Portfolio Value $1025
         </motion.div>
@@ -142,26 +142,26 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: interval }} // Opacity controlled by scroll progress
-          className="absolute top-[65%] left-[65%] md:top-[49%] md:left-[60%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-sm md:text-md"
+          className="absolute top-[72.5%] left-[65%] md:top-[49%] md:left-[60%] translate-x-[-50%] translate-y-[-50%] text-green-400 text-sm md:text-md"
         >
           Portfolio Value <br /> $1842
         </motion.div>
 
         <motion.div
           style={{ opacity: covid_strikes }} // Opacity controlled by scroll progress
-          className="absolute top-[72%] left-[87%] md:top-[66%] md:left-[80%] translate-x-[-50%] translate-y-[-50%] text-white text-sm md:text-md "
+          className="absolute top-[81%] left-[87%] md:top-[66%] md:left-[80%] translate-x-[-50%] translate-y-[-50%] text-white text-xs md:text-md "
         >
           Covid Strikes (2019)
         </motion.div>
         <motion.div
           style={{ opacity: covid_strikes }} // Opacity controlled by scroll progress
-          className="absolute top-[79%] left-[87%] md:top-[69%] md:left-[80%] translate-x-[-50%] translate-y-[-50%] text-red-400 text-sm md:text-md "
+          className="absolute top-[87%] left-[87%] md:top-[69%] md:left-[80%] translate-x-[-50%] translate-y-[-50%] text-red-400 text-xs md:text-md "
         >
           Portfolio Value $1577
         </motion.div>
         <motion.div
           style={{ opacity: covid_strikes_story }} // Opacity controlled by scroll progress
-          className="absolute top-[30%] left-[10%]  md:left-[2%]  text-white text-sm md:text-md m md:w-[600px]"
+          className="absolute top-[30%] left-[7%]  md:left-[2%]  mr-2 text-white text-sm md:text-md m md:w-[600px]"
         >
           <p>
          <b>The COVID-19 pandemic</b> severely disrupted the global economy, causing widespread job losses, supply chain disruptions, and unprecedented declines in GDP. Governments implemented massive stimulus packages and central banks lowered interest rates to stabilize markets. While some sectors (like tech) thrived, others (like travel and hospitality) faced prolonged downturns, leading to a sharp economic divide and long-term inflationary pressures.
@@ -170,19 +170,19 @@ const LineChart = () => {
 
         <motion.div
           style={{ opacity: inf_high }} // Opacity controlled by scroll progress
-          className="absolute top-[55%] left-[89%] md:top-[23%] md:left-[90%] translate-x-[-50%] translate-y-[-50%] text-center text-white text-sm md:text-md text-red-400 w-[90px]"
+          className="absolute top-[65%] left-[87%] md:top-[23%] md:left-[90%] translate-x-[-50%] translate-y-[-50%] text-center text-white text-xs md:text-md text-red-400 w-[90px]"
         >
           24 Year High Infation 6.8%
         </motion.div>
         <motion.div
           style={{ opacity: inf_high }} // Opacity controlled by scroll progress
-          className="absolute top-[50%] left-[88%] md:top-[29%] md:left-[85%] translate-x-[-50%] translate-y-[-50%] text-center text-green-400 text-sm md:text-md w-[90px]"
+          className="absolute top-[68.5%] left-[84%] md:top-[29%] md:left-[85%] translate-x-[-50%] translate-y-[-50%] text-center text-green-400 text-xs md:text-md w-[90px]"
         >
           Portfolio Value $2581
         </motion.div>
         <motion.div
           style={{ opacity: current }} // Opacity controlled by scroll progress
-          className="absolute top-[50%] left-[88%] md:top-[10%] md:left-[97%] translate-x-[-50%] translate-y-[-50%] text-center text-sm md:text-md w-[90px]"
+          className="absolute top-[60%] left-[92%] md:top-[10%] md:left-[97%] translate-x-[-50%] translate-y-[-50%] text-center text-xs md:text-md w-[90px]"
         >
           <b>Year 2024</b>
         </motion.div>
