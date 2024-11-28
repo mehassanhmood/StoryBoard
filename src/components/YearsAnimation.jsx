@@ -11,15 +11,15 @@ import "../App.css"
 const YearsAnimation = ({refernece}) => {
   const housingRef = useRef(null);
   const inflationRef = useRef(null);
-  const bondRef = useRef(null);
+  const tsxRef = useRef(null);
   const comparitiveRef = useRef(null);
-  const hedgingRef = useRef(null);
+  const fearRef = useRef(null);
 
   const housingInView = useInView(housingRef, {once: false, amount:0.3})
   const InflationInView = useInView(inflationRef, {once: false, amount:0.3})
-  const bondInView = useInView(bondRef, {once: false, amount:0.3})
+  const tsxInView = useInView(tsxRef, {once: false, amount:0.3})
   const comparisonInView = useInView(comparitiveRef, {once: false, amount:0.3})
-  const hedgingInView = useInView(hedgingRef, {once: false, amount:0.3})
+  const fearInView = useInView(fearRef, {once: false, amount:0.3})
 
 
 
@@ -29,10 +29,10 @@ const YearsAnimation = ({refernece}) => {
       <motion.div 
  
       className='flex h-1/3 md:h-full w-[full] md:w-[60%]  top-0 md:mt-5 z-50'>
-        <DynamicStory housingInView={housingInView} inflationInView={InflationInView} bondInView={bondInView} comparisonInView={comparisonInView} hedgingInView = {hedgingInView}/>
+        <DynamicStory housingInView={housingInView} inflationInView={InflationInView} tsxInView={tsxInView} comparisonInView={comparisonInView} fearInView = {fearInView}/>
       </motion.div>
       <div className='md:w-[40%]  md:h-full h-2/3 z-0 overflow-y-scroll'>
-        <Narrative text={<LoremIpsum housingRef={ housingRef } inflationRef={inflationRef} bondRef={bondRef} comparitiveRef={comparitiveRef}  hedgingRef = {hedgingRef} />} />
+        <Narrative text={<LoremIpsum housingRef={ housingRef } inflationRef={inflationRef} tsxRef={tsxRef} comparitiveRef={comparitiveRef}  fearRef = {fearRef} />} />
        </div>
     </div>
   )

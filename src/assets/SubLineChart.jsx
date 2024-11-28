@@ -7,7 +7,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 const SubLineChart = ({ data, label, text }) => {
     const chartData = {
-        labels: data.map((_, index) => `Year ${index + 1}`),
+        labels: data.map((_, index) => `Month ${index + 1}`),
         datasets : [{
             label: label,
             data: data,

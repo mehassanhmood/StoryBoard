@@ -5,12 +5,13 @@ import CompoundedBond from '../assets/CompoundedBond';
 import SubLineChart from '../assets/SubLineChart';
 import BarChart from '../assets/BarChart';
 import stonks from "/stonks.jpg"
+import TsxPrice from "../assets/TsxPrice"
 import { motion } from 'framer-motion';
 
 
 
 
-const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonInView , hedgingInView}) => {
+const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonInView , fearInView}) => {
 
     const [data, setData] = useState([]);
     const [ housingData, setHousingData] = useState([]);
@@ -35,8 +36,16 @@ const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonI
             transition={{duration:1}}
             className="sub-boxes justify-center items-center  p-2  w-full">
 
-                { bondInView && (
-                 <SubLineChart data={bondData} label={"Treasury Investment"} text={"Compounded growth of 10 Yr Treasury"} />
+                { fearInView && (
+                  <motion.div
+                  initial = {{opacity:0}}
+                  animate = {{opacity: 0.8}}
+                  transition={{duration:1.5}}
+                  >
+                    <img src={stonks} 
+                    className='md:h-[400px] border border-transparent rounded-3xl'
+                    alt="" />
+                  </motion.div>
                 )}
 
                 { inflationInView && (
@@ -53,16 +62,8 @@ const DynamicStory = ({housingInView , inflationInView , bondInView, comparisonI
 
                  )}
                  {(
-                  hedgingInView && (
-                    <motion.div
-                    initial = {{opacity:0}}
-                    animate = {{opacity: 0.8}}
-                    transition={{duration:1.5}}
-                    >
-                      <img src={stonks} 
-                      className='md:h-[400px] border border-transparent rounded-3xl'
-                      alt="" />
-                    </motion.div>
+                  tsxInView && (
+                    <TsxPrice />
                   )
                  )}
 
