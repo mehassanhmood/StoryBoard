@@ -41,19 +41,51 @@ import { color } from 'framer-motion';
     };
   
     // Chart options
+
     const options = {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: "top",
+        responsive: true,
+        plugins: {
+          legend: {
+            position: "top",
+            labels: {
+              color: "white", // White legend text
+            },
+          },
+          title: {
+            display: true,
+            text: "Comparative Analysis of Returns",
+            color: "white", // White title text
+          },
         },
-        title: {
-          display: true,
-          text: "Comparative Analysis of Returns",
-          color: 'white'
+        scales: {
+          x: {
+            grid: {
+              color: "white", // White grid lines for X-axis
+            },
+            ticks: {
+              color: "white", // White tick labels for X-axis
+            },
+            title: {
+              display: true,
+              text: "Investment Options",
+              color: "white", // White title for X-axis
+            },
+          },
+          y: {
+            grid: {
+              color: "white", // White grid lines for Y-axis
+            },
+            ticks: {
+              color: "white", // White tick labels for Y-axis
+            },
+            title: {
+              display: true,
+              text: "Returns (%)",
+              color: "white", // White title for Y-axis
+            },
+          },
         },
-      },
-    };
+      };
   
     return (
       <div style={{ width: "80%", margin: "auto" }}>
