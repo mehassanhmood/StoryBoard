@@ -74,9 +74,9 @@ const SubLineChart = ({ data, label, text }) => {
         },
       };
   return (
-    <div className='h-full'>
+ 
       <Line data={chartData} options={chartOptions} />
-      </div>
+
   )
 }
 
