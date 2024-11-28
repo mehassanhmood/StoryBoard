@@ -19,8 +19,8 @@ const Narrative = ({text}) => {
   
     <div 
     // ref={containerRef}
-    className='flex  w-full h-full m-4 my-12 py-12  mt-[10px] md:mt-[100px]'>
-      <motion.div className="w-[25px] h-full absolute bg-cyan-500 sticky left-0 mt-10  border rounded-lg border-teal-600 z-20" style={{ scaleY, transformOrigin:"top" }} />
+    className='flex w-full h-full py-12 mt-[10px] md:mt-[100px]'>
+      <motion.div className="w-[55px] h-full absolute bg-cyan-500 sticky left-0 mt-10  border rounded-lg border-teal-600 z-20" style={{ scaleY, transformOrigin:"top" }} />
       <p 
       ref={containerRef}
       className='z-10 p-6 m-6 overflow-y-scroll text-xl'>
