@@ -27,10 +27,9 @@ const YearsAnimation = ({refernece}) => {
 
   return (
     
-    <div ref={refernece} className='flex flex-col h-screen md:h-[120vh] justify-between md:flex-row gap-2  bg-gradient-to-r from-cyan-500/50 to-purple-500/50 '>
+    <div ref={refernece} className='flex flex-col h-screen md:h-[120vh] justify-between md:flex-row md:gap-2  bg-gradient-to-r from-cyan-500/50 to-purple-500/50 '>
       <motion.div 
- 
-      className='flex h-1/3 md:h-full w-[full] md:w-[60%]  top-0 md:mt-5 z-50'>
+      className='flex h-1/3 w-full md:h-full md:w-[60%] md:mt-5 z-50 mt-12'>
         <DynamicStory housingInView={housingInView} inflationInView={InflationInView} tsxInView={tsxInView} comparisonInView={comparisonInView} fearInView = {fearInView} goldInView= {goldInView}/>
       </motion.div>
       <div className='md:w-[40%]  md:h-full h-2/3 z-0 overflow-y-scroll'>

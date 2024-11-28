@@ -27,7 +27,9 @@ export function LoremIpsum({housingRef, inflationRef, tsxRef, comparitiveRef, fe
           <p 
           className="story"
           ref={housingRef}>
-            Housing has proven to be one of the most resilient investments over the years. From 2000 to 2024, the real estate market experienced substantial growth, driven by demand, urbanization, and limited housing supply in many regions. A dollar invested in housing in 2000 would have grown significantly, benefiting from property appreciation and rental income. For example, in major cities, property values have doubled or tripled, turning even modest investments into substantial wealth. This underscores the potential of real estate as a long-term wealth-building asset.
+            Real estate has consistently proven to be a resilient and rewarding investment. Over the years, housing markets have shown remarkable growth, driven by increasing demand, urbanization, and limited supply in many regions. For instance, a dollar invested in real estate back in 2000 would have grown substantially by 2024, thanks to both property value appreciation and rental income. In some cities, property values have even doubled or tripled during this period.
+
+This growth highlights the potential of real estate as a reliable inflation hedge and wealth-building asset. While upfront costs and ongoing management can be challenges, the long-term benefits—such as significant capital appreciation and passive income—make real estate a strong choice for investors looking to build wealth over time.
           </p>
           <img src={index_fund} className ="mb-10 md:ml-10 md pl-10 opacity-20" alt="" />
           <h2 className="text-center pt-12 mb-10 text-2xl md:3xl font-semibold">Why People Are Afraid to Invest in an Index Fund</h2>

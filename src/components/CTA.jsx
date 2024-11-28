@@ -70,7 +70,7 @@ const CTA = () => {
         )}
     </div>
 
-      <div className='flex-col justify-center items-center top-[50%] text-center'> 
+      <div className='flex-col justify-center items-center top-[50%] text-center md:mr-10'> 
         <div className='flex flex-col justify-center items-center '>
         <h2 class="text-3xl font-bold mt-4 mb-4 ">Take Control of Your Financial Future Today!</h2>
         <p>Empower yourself with resources to beat inflation:

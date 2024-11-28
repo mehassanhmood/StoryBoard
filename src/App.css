@@ -9,7 +9,6 @@
 }
 
 .sub-boxes {
-    border-radius: 10px;
     display: flex; 
     
 }
@@ -29,10 +28,4 @@
   .story {
     margin-bottom: 100px;
     padding-bottom: 44px;
-  }
-
-  @media (min-width: 1536px) {
-    .story {
-      margin-bottom: 100px;
-    }
   }

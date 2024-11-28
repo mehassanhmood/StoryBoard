@@ -35,7 +35,7 @@ const DynamicStory = ({housingInView , inflationInView , tsxInView, comparisonIn
             initial={{ opacity:0 }}
             animate={{ opacity:1 }}
             transition={{duration:1}}
-            className="sub-boxes justify-center items-center  p-2  w-full">
+            className="sub-boxes justify-center p-1 items-center w-full h-full">
 
                 { goldInView && (
                   <motion.div
