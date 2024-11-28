@@ -14,7 +14,7 @@ const YearsAnimation = ({refernece}) => {
   const bondRef = useRef(null);
 
   const housingInView = useInView(housingRef, {once: false, amount:0.3})
-  const InflationInView = useInView(inflationRef, {once: false, amount:0.6})
+  const InflationInView = useInView(inflationRef, {once: false, amount:0.3})
   const bondInView = useInView(bondRef, {once: false, amount:0.3})
 
 
