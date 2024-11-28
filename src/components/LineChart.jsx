@@ -133,7 +133,7 @@ const LineChart = () => {
         </motion.div>
         <motion.div
           style={{ opacity: housing_crisis_story }} // Opacity controlled by scroll progress
-          className="absolute top-[30%] left-[10%]  md:left-[2%]  text-white text-sm md:text-md m md:w-[600px]"
+          className="absolute top-[30%] left-[10%]  md:left-[22%]  text-white text-sm md:text-md m md:w-[600px]"
         >
           <p>
           <b>The 2008 Housing Crisis</b>  was triggered by excessive lending to unqualified buyers and the proliferation of subprime mortgages. When homeowners defaulted en masse, the housing market collapsed, leading to a financial meltdown as mortgage-backed securities lost value. This caused a global recession, massive bank failures, and widespread economic hardship.
@@ -161,7 +161,7 @@ const LineChart = () => {
         </motion.div>
         <motion.div
           style={{ opacity: covid_strikes_story }} // Opacity controlled by scroll progress
-          className="absolute top-[30%] left-[7%]  md:left-[2%]  mr-2 text-white text-sm md:text-md m md:w-[600px]"
+          className="absolute top-[30%] left-[7%]  md:left-[52%]  mr-2 text-white text-sm md:text-md m md:w-[600px]"
         >
           <p>
          <b>The COVID-19 pandemic</b> severely disrupted the global economy, causing widespread job losses, supply chain disruptions, and unprecedented declines in GDP. Governments implemented massive stimulus packages and central banks lowered interest rates to stabilize markets. While some sectors (like tech) thrived, others (like travel and hospitality) faced prolonged downturns, leading to a sharp economic divide and long-term inflationary pressures.
