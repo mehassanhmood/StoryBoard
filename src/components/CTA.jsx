@@ -23,9 +23,9 @@ const CTA = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between h-[100vh] p-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-between h-[100vh] p-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white overflow-y-scroll">
 
-      <div className='flex flex-col w-1/2 h-[full] justify-center items-center'>
+      <div className='flex flex-col md:w-1/2 h-[full] justify-center items-center'>
         <h1 className="text-xl font-bold mb-4 text-center">
           Inflation Calculator: See How Inflation Affects Your Money
         </h1>
@@ -72,11 +72,11 @@ const CTA = () => {
 
       <div className='flex-col justify-center items-center top-[50%] text-center'> 
         <div className='flex flex-col justify-center items-center '>
-        <h2 class="text-3xl font-bold mb-4 ">Take Control of Your Financial Future Today!</h2>
+        <h2 class="text-3xl font-bold mt-4 mb-4 ">Take Control of Your Financial Future Today!</h2>
         <p>Empower yourself with resources to beat inflation:
         </p>
-          <h2 className='text-center'>Investment Resources</h2>
-          <ul className='py-6 my-6'>
+          <h2 className='text-center font-bold'>Investment Resources:</h2>
+          <ul className='md:py-6 md:my-6 text-sm'>
             <li><a href="https://www.worldbank.org/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faGlobe} /> World Bank – Global economic insights and tools
             </a></li>
             <li><a href="https://www.investopedia.com/" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faUniversity} /> Investopedia – Your guide to investing basics
@@ -86,8 +86,8 @@ const CTA = () => {
             </a></li>
           </ul>
           <div>
-            <h2>Why It Matters:</h2>
-            <p>
+            <h2 className='font-bold' >Why It Matters:</h2>
+            <p className='text-sm' >
                 Learn how compound interest can grow your wealth. <br />
                 Understand the potential of real estate investments. <br />
                 Discover the stability of index funds for long-term growth. <br />

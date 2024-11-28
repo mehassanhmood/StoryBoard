@@ -1,22 +1,22 @@
 export function LoremIpsum({housingRef, inflationRef, bondRef}) {
     return (
       <>
-        <div class="content-section">
+        <div className="content-section">
           {/* <h1 className="text-center text-3xl">Understanding the Effects of Inflation and Investment Choices</h1> */}
-
-          <h2 ref={inflationRef}
-          className="text-center text-2xl">The Effect of Inflation on the Dollar (2000–2024)</h2>
+    
+          <h2 
+          className="text-center text-2xl mb-[50px] md:mt-[100px]">The Effect of Inflation on the Dollar (2000–2024)</h2>
           <br />
-          <p className="story">
+          <p className="story mb-100px" ref={inflationRef}>
             Over the last two decades, inflation has significantly eroded the purchasing power of the dollar. In 2000, one dollar could buy much more than it can today, with inflation steadily increasing at an average annual rate of 2-3%. By 2024, the cumulative impact of inflation has reduced the real value of a dollar by nearly 40%, meaning that what cost $1 in 2000 might now cost approximately $1.40 or more. This silent erosion highlights the importance of understanding inflation and its impact on savings and investments.
           </p>
           <br />
           <br />
           <br />
-
+          
           <h2 
             
-            className="text-center text-2xl pt-12 mt-12">Growth of a Dollar If Invested in Housing</h2>
+            className="text-center text-2xl pt-12 mb-10">Growth of a Dollar If Invested in Housing</h2>
           <br />
           <p 
           className="story"

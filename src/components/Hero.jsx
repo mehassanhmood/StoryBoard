@@ -1,24 +1,10 @@
 import React from 'react'
 import placeholderImage from "/dollar1.jpg"
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Hero = () => {
 
-  const question = "Compelling Question or a statistics to engage the user"
-  const letters = question.split(" ")
-  const letterAnimation = {
-    hidden: {opacity:0, y:20},
-    visible: (i) => ({
-      opacity: 1,
-      y:0,
-      transition: {
-        delay: i * 0.2,
-        duration: 3,
-        ease:"easeInOut"
-      }
-    })
-  }
-
+  const question = "In Canada, nearly 49% of Canadians are considered financially literate, yet only 31% have a budget to manage their expenses. Many struggle with understanding credit, debt management, and long-term savings strategies."
 
   return (
     <div className='flex flex-col h-[100vh] w-[100vw] overflow-hidden'>
@@ -29,23 +15,14 @@ const Hero = () => {
       </div>
 
       <div className='flex flex-col md:flex-row h-full m-2 p-6 justify-around items-center relative gap-6'>
-        <motion.div className="w-[35%]">
+        <motion.div 
+          className='w-[35%] mr-2'
+          initial={{opacity:0, x:-900}}
+          animate={{opacity:1, x:0}}
+          transition={{duration:1}}
+        >
           <p className="flex flex-wrap md:text-4xl text-pretty text-transparent bg-clip-text bg-gradient-to-r from-teal-100 to-cyan-300">
-            {letters.map((letter, index) => (
-                <motion.span
-                className='mr-2'
-                key={index}
-                custom={index}
-                initial={"hidden"}
-                animate={"visible"}
-                variants={letterAnimation}
-                >
-                  {/* {letter === " " ? "\u00A0": letter} */}
-                  {letter}
-                   
-                </motion.span>
-            ))
-            }
+                {question}
           </p>
         </motion.div>
 
