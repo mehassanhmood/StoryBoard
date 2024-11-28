@@ -30,3 +30,9 @@
     margin-bottom: 290px;
     padding-bottom: 44px;
   }
+
+  @media (min-width: 1280px) {
+    .story {
+      margin-bottom: 500px;
+    }
+  }
