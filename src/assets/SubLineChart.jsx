@@ -25,20 +25,20 @@ const SubLineChart = ({ data, label, text, timePeriod }) => {
             title: {
               display: true,
               text: 'Time',
-              color: 'white', // Optional: Change title text color to white for better visibility in dark mode
+              color: 'white', 
             },
             grid: {
-              color: 'rgba(255, 255, 255, 0.2)', // Dark grid lines (white with some transparency)
+              color: 'rgba(255, 255, 255, 0.2)', 
             },
             ticks: {
-              color: 'white', // Tick marks color (e.g., white on dark background)
+              color: 'white', 
             },
           },
           y: {
             title: {
               display: true,
               text: text,
-              color: 'white', // Optional: Change title text color to white for better visibility in dark mode
+              color: 'white', 
             },
             grid: {
               color: 'rgba(255, 255, 255, 0.2)', // Dark grid lines (white with some transparency)
